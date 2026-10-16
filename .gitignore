@@ -45,12 +45,19 @@ next-env.d.ts
 !/build/sites-vite-plugin.LICENSE
 !/build/sites-vite-plugin.ts
 !/build/sites-worker.ts
+!/build/preview-config.ts
 
 /dist/
 /.wrangler/
 # Checkout-local execution profile and tool state; never publish them.
 /.sites-runtime/
-/.agents/
+/.agents/*
+!/.agents/rules/
 /.codex/
 /outputs/
 /work/
+
+
+/playwright-report/
+/test-results/
+*.tsbuildinfo
